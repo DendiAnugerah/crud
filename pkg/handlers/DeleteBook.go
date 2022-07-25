@@ -9,7 +9,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-func DeleteBook(w http.ResponseWriter, r *http.Request) {
+func (h handler) DeleteBook(w http.ResponseWriter, r *http.Request) {
 	// Read the dynamic id parameter
 	vars := mux.Vars(r)
 	id, _ := strconv.Atoi(vars["id"])

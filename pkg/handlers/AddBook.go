@@ -11,7 +11,7 @@ import (
 	"github.com/DendiAnugerah/crud/pkg/models"
 )
 
-func AddBook(w http.ResponseWriter, r *http.Request) {
+func (h handler) AddBook(w http.ResponseWriter, r *http.Request) {
 	// Read to request body
 	defer r.Body.Close()
 	body, err := ioutil.ReadAll(r.Body)
