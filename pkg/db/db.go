@@ -4,7 +4,6 @@ import (
 	"log"
 
 	"github.com/DendiAnugerah/crud/pkg/models"
-	"github.com/jinzhu/gorm"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
